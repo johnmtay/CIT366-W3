@@ -1,21 +1,25 @@
-<div class="panel panel-default">
-  <div class="row">
+<div class="row">
     <div class="col-xs-12">
-      <div class="panel-heading">
-        <br>
-        <br>
-        <div class="row">
-          <div class="col-xs-12">
-            <span style='float: right;'><button class="btn btn-primary">Edit</button>&nbsp;
-            <button class="btn btn-danger">Delete</button></span>
-          </div>
-        </div>
-      </div>
-      <hr>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4>
+                {{ contact.name }}
+              <span class="pull-right">
+                  <button class="btn btn-primary" type="submit">Edit</button>
+                  <button class="btn btn-danger" type="button">Delete</button>
+              </span>
+              
+                <img 
+                [src]="contact.imageUrl" 
+                alt="{{ contact.name }}" 
+                class="img-responsive" 
+                style="max-height: 100px;">
+              </h4>
+          </div> 
       <div class="panel-body">
-        <div class="col-xs-12">
-              <p style='font-weight: bold;'>Email:</p>
-              <p style='font-weight: bold;'>Phone:</p>
-        </div>
+        <p>{{ contact.email }} </p>
+        <p>{{ contact.phone }}</p>
       </div>
+      </div>
+    </div>
     </div>

@@ -9,7 +9,7 @@ export class AppComponent {
   loadedFeature = 'contact';
   title = 'cms';
 
-  onNavigate(feature: string) {
+  switchView(feature: string) {
     this.loadedFeature = feature;
   }
 }
